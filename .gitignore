@@ -1,36 +1,61 @@
-# Virtual Environment
-venv/
-.venv/
-env/
-
-# Python cache files
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pyre/
+.pytest_cache/
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+.ipynb_checkpoints/
+build/
+dist/
+site/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+*.nar
+*.log
+hs_err_pid*
+replay_pid*
+target/
+out/
+bin/
+.gradle/
+
+# IntelliJ IDEA / JetBrains
+.idea/
+*.iml
+*.ipr
+*.iws
 
 # VS Code
 .vscode/
 
-# PyCharm
-.idea/
-
-# Jupyter Notebook checkpoints
-.ipynb_checkpoints/
-
-# Environment variables
+# Environment and local config
 .env
+.env.*
+!.env.example
 
-# Build and distribution files
-build/
-dist/
-*.egg-info/
-
-# Test and coverage files
-.pytest_cache/
-.coverage
-htmlcov/
+# Package/tool lock files generated locally
+uv.lock
 
 # OS files
 .DS_Store
 Thumbs.db
-uv.lock
